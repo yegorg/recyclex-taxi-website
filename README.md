@@ -1,4 +1,4 @@
-# Taxi Cab Website - Local Customization Guide
+# RECYCLEX s.r.o. - Taxi Website
 
 ## 📁 Project Structure
 ```
@@ -137,3 +137,6 @@ The template is already mobile-responsive using Bootstrap, but test these areas:
 
 ## 📞 Support
 This template is based on W3layouts' design. The local version is ready for customization and deployment.
+
+## 🚀 Deployment
+This website is deployed on Vercel and optimized for Slovakia and EU taxi services by RECYCLEX s.r.o.
