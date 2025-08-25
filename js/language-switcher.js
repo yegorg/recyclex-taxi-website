@@ -54,6 +54,9 @@ class LanguageSwitcher {
         
         // Update placeholders and values
         this.updateFormElements(lang);
+        
+        // Update title attributes
+        this.updateTitleAttributes(lang);
     }
 
     updateFormElements(lang) {
@@ -80,6 +83,25 @@ class LanguageSwitcher {
             const value = button.getAttribute(`data-value-${lang}`);
             if (value) {
                 button.value = value;
+            }
+        });
+        
+        // Update title attributes for elements with data-title-* attributes
+        const titleElements = document.querySelectorAll('[data-title-en]');
+        titleElements.forEach(element => {
+            const title = element.getAttribute(`data-title-${lang}`);
+            if (title) {
+                element.title = title;
+            }
+        });
+    }
+    
+    updateTitleAttributes(lang) {
+        const titleElements = document.querySelectorAll('[data-title-en]');
+        titleElements.forEach(element => {
+            const title = element.getAttribute(`data-title-${lang}`);
+            if (title) {
+                element.title = title;
             }
         });
     }
