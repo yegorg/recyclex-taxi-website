@@ -143,6 +143,13 @@ html[lang="sk"] [data-lang-sk][data-display="table"] {
     }
 }
 
+/* Book Now button optimization */
+.top-forms span a {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    border-radius: 20px !important;
+}
+
 /* Additional top bar fixes */
 .top-bar_sub_w3layouts .row {
     align-items: center;
@@ -155,5 +162,17 @@ html[lang="sk"] [data-lang-sk][data-display="table"] {
     
     .top-bar_sub_w3layouts .col-12:last-child {
         margin-bottom: 0;
+    }
+    
+    .top-forms span a {
+        padding: 6px 12px !important;
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-forms span a {
+        padding: 5px 10px !important;
+        font-size: 12px !important;
     }
 }
