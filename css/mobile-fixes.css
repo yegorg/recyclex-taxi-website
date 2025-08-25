@@ -8,12 +8,43 @@
 html, body {
     overflow-x: hidden;
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile width constraints */
+@media (max-width: 991px) {
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+    
+    .col-md-4, .col-sm-6, .col-lg-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+    }
 }
 
 /* Top Bar Mobile Improvements */
 @media (max-width: 991px) {
     .top-bar_sub_w3layouts {
         padding: 0.5em 1em;
+        position: relative;
+        z-index: 999;
     }
     
     .top-bar_sub_w3layouts .row {
@@ -23,6 +54,36 @@ html, body {
     
     .top-bar_sub_w3layouts .row > div {
         padding: 0.25rem;
+    }
+    
+    /* Remove menu button on mobile for both pages */
+    .navbar-toggler {
+        display: none !important;
+    }
+    
+    .navbar-collapse {
+        display: none !important;
+    }
+    
+    .top-header {
+        display: none !important;
+    }
+    
+    /* Ensure body content doesn't overlap header */
+    .banner {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        min-height: auto !important;
+    }
+    
+    .fullscreen-banner {
+        margin-top: 0 !important;
+    }
+    
+    /* Fix booking page layout */
+    .bookingform {
+        margin-top: 0 !important;
+        padding-top: 2rem !important;
     }
 }
 
