@@ -1,0 +1,407 @@
+/* Mobile Responsiveness Fixes for RECYCLEX s.r.o. Website */
+
+/* Base Mobile Optimizations */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Top Bar Mobile Improvements */
+.top-bar_sub_w3layouts {
+    padding: 0.5em 1em;
+}
+
+.top-bar_sub_w3layouts .row {
+    align-items: center;
+    margin: 0;
+}
+
+.top-bar_sub_w3layouts .row > div {
+    padding: 0.25rem;
+}
+
+/* Logo Mobile Optimization */
+a.navbar-brand {
+    font-size: 1.5em !important;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+/* Phone Number Mobile Fix */
+.log-icons p {
+    font-size: 14px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Top Forms and Language Switcher Container */
+.top-forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* Book Button Mobile Optimization */
+.top-forms span a {
+    padding: 8px 10px !important;
+    font-size: 16px !important;
+    min-width: 40px !important;
+    height: auto !important;
+    line-height: 1.2 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Language Switcher Mobile Fixes */
+.language-switcher {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.lang-btn {
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    min-width: 36px;
+    line-height: 1;
+}
+
+/* Banner Mobile Improvements */
+.banner-info {
+    padding: 1em;
+    width: 95% !important;
+    max-width: none;
+}
+
+.banner-info h1, .banner-info h2 {
+    font-size: 2em !important;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+.banner-info h2 {
+    font-size: 1.5em !important;
+}
+
+.banner-info .btn {
+    font-size: 16px !important;
+    padding: 12px 24px !important;
+    margin-top: 1em;
+}
+
+/* Form Mobile Improvements */
+.book-agileinfo-form {
+    padding: 1rem;
+}
+
+.book-agileinfo-form input,
+.book-agileinfo-form select,
+.book-agileinfo-form textarea {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.book-agileinfo-form input[type="submit"],
+.book-agileinfo-form input[type="reset"] {
+    padding: 12px 20px;
+    font-size: 16px !important;
+    margin: 10px 5px;
+    min-width: 120px;
+}
+
+/* Navigation Mobile Fixes */
+.navbar-toggler {
+    border: 1px solid #ffc107;
+    background: #ffc107;
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-collapse {
+    background: rgba(0, 0, 0, 0.9);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item {
+    margin: 0.5rem 0;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 0.75rem 1rem !important;
+}
+
+/* Footer Mobile Optimization */
+footer {
+    padding: 2rem 1rem !important;
+}
+
+.w3ls-footer-bottom-list {
+    text-align: center;
+}
+
+.w3ls-footer-bottom-list li {
+    font-size: 14px;
+    margin: 0.5rem 0;
+    word-break: break-word;
+}
+
+/* Responsive Breakpoints */
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+    .top-bar_sub_w3layouts {
+        padding: 0.3em 0.5em;
+    }
+    
+    .top-bar_sub_w3layouts .row > div {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .top-bar_sub_w3layouts .row > div:last-child {
+        margin-bottom: 0;
+    }
+    
+    a.navbar-brand {
+        font-size: 1.3em !important;
+    }
+    
+    .log-icons p {
+        font-size: 13px;
+    }
+    
+    .top-forms {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .top-forms span a {
+        padding: 10px 12px !important;
+        font-size: 18px !important;
+    }
+    
+    .banner-info h1 {
+        font-size: 1.8em !important;
+    }
+    
+    .banner-info h2 {
+        font-size: 1.3em !important;
+    }
+    
+    .banner-info .btn {
+        font-size: 14px !important;
+        padding: 10px 20px !important;
+    }
+    
+    .book-appointment h2 {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+    
+    .book-agileinfo-form .row .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Very Small Phones */
+@media (max-width: 375px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    a.navbar-brand {
+        font-size: 1.2em !important;
+        word-break: break-all;
+    }
+    
+    .log-icons p {
+        font-size: 12px;
+    }
+    
+    .top-forms span a {
+        padding: 8px 10px !important;
+        font-size: 16px !important;
+    }
+    
+    .lang-btn {
+        padding: 6px 10px !important;
+        font-size: 12px !important;
+        min-width: 32px;
+    }
+    
+    .banner-info h1 {
+        font-size: 1.6em !important;
+    }
+    
+    .banner-info h2 {
+        font-size: 1.2em !important;
+    }
+    
+    h1.heading, h2.heading, h3.heading {
+        font-size: 1.8rem !important;
+        text-align: center;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (orientation: landscape) and (max-height: 500px) {
+    .banner-info {
+        padding-top: 2em;
+    }
+    
+    .banner-info h1 {
+        font-size: 1.8em !important;
+    }
+    
+    .banner-info h2 {
+        font-size: 1.3em !important;
+    }
+    
+    .top-bar_sub_w3layouts {
+        position: relative;
+        background: rgba(255, 255, 255, 0.98);
+    }
+}
+
+/* Touch improvements */
+@media (pointer: coarse) {
+    .lang-btn, .top-forms span a, .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .top-forms span a,
+    .lang-btn {
+        border-width: 0.5px;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .lang-btn,
+    .top-forms span a,
+    .btn {
+        transition: none;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .top-bar_sub_w3layouts {
+        background: rgba(255, 255, 255, 0.95);
+    }
+}
+
+/* Stack elements vertically on very small screens */
+@media (max-width: 576px) {
+    .top-bar_sub_w3layouts .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .top-bar_sub_w3layouts .col-md-4 {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .top-bar_sub_w3layouts .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+    
+    .top-forms {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Improve form layout on mobile */
+@media (max-width: 768px) {
+    .book-appointment {
+        padding: 2rem 1rem;
+    }
+    
+    .main-agile-sectns .col-md-6 {
+        margin-bottom: 1rem;
+    }
+    
+    .agileits-btm-spc {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Fix overflow issues */
+.container-fluid,
+.container,
+.row {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Improve button accessibility on mobile */
+button, .btn, .lang-btn, .top-forms span a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+    tap-highlight-color: rgba(0,0,0,0.1);
+}
+
+/* Fix viewport meta tag issues */
+@viewport {
+    width: device-width;
+    initial-scale: 1;
+}
+
+/* Add background image for mobile banner */
+.banner-img {
+    background-image: url('../images/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Mobile-specific background positioning */
+@media (max-width: 768px) {
+    .banner-img {
+        background-position: center 30%;
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-img {
+        min-height: 60vh;
+    }
+}
