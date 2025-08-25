@@ -7,12 +7,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RECYCLEX s.r.o. - Book Your Taxi | Slovakia and EU Service</title>
+<title data-lang-en>RECYCLEX s.r.o. - Book Your Taxi | Slovakia and EU Service</title>
+<title data-lang-sk>RECYCLEX s.r.o. - Rezervujte si Taxi | Slovensko a EÚ Služba</title>
 	
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="RECYCLEX s.r.o., Book Taxi, Slovakia Taxi Booking, EU Transportation, Taxi Reservation, Mobile Taxi App" />
+	<meta name="keywords" content="RECYCLEX s.r.o., Book Taxi, Slovakia Taxi Booking, EU Transportation, Taxi Reservation, Mobile Taxi App" data-lang-en />
+	<meta name="keywords" content="RECYCLEX s.r.o., Rezervovať Taxi, Slovensko Taxi Rezervácia, EÚ Doprava, Taxi Rezervácia, Mobilná Taxi Aplikácia" data-lang-sk />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -32,6 +34,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="css/language-switcher.css" type="text/css" media="all" /> <!-- Language-Switcher-CSS -->
 	<!-- //css files -->
 
 	<!-- web-fonts -->
@@ -46,21 +49,30 @@
 <div class="top-bar_sub_w3layouts container-fluid">
 		<div class="row">
 			
-			<div class="col-md-4 col-sm-6 log-icons mt-2">
-				<p class="py-2"><i class="fas fa-phone"></i> Call Taxi : +421918094394</p>
+			<div class="col-md-3 col-sm-6 log-icons mt-2">
+				<p class="py-2" data-lang-en><i class="fas fa-phone"></i> Call Taxi : +421918094394</p>
+				<p class="py-2" data-lang-sk><i class="fas fa-phone"></i> Volať Taxi : +421918094394</p>
 			</div>
 			
-			<div class="col-md-4 col-sm-6 logo">
+			<div class="col-md-3 col-sm-6 logo">
 				<a class="navbar-brand" href="index.html">
 					<i class="fas fa-taxi"></i> RECYCLEX s.r.o.</a>
 			</div>
 			
-			
-			<div class="col-md-4 top-forms mt-md-3 mt-2 mb-md-0 mb-3">
+			<div class="col-md-3 top-forms mt-md-3 mt-2 mb-md-0 mb-3">
 				<span class="mx-lg-4 mx-md-2  mx-1">
-					<a href="#bookingform" class="scroll">
+					<a href="#bookingform" class="scroll" data-lang-en>
 						<i class="fas fa-calendar-alt"></i> Book Now</a>
+					<a href="#bookingform" class="scroll" data-lang-sk>
+						<i class="fas fa-calendar-alt"></i> Rezervovať</a>
 				</span>
+			</div>
+			
+			<div class="col-md-3 d-flex justify-content-end align-items-center">
+				<div class="language-switcher">
+					<button class="lang-btn active" data-lang="en">EN</button>
+					<button class="lang-btn" data-lang="sk">SK</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -77,32 +89,16 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mx-auto">
 						<li class="nav-item">
-							<a class="nav-link ml-lg-0" href="index.html">Home
+							<a class="nav-link ml-lg-0" href="index.html" data-lang-en>Home
+								<span class="sr-only">(current)</span>
+							</a>
+							<a class="nav-link ml-lg-0" href="index.html" data-lang-sk>Domov
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="services.html">Services</a>
-						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="booking.html">Booking</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="booking.html#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Dropdown
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item text-center" href="about.html">About</a>
-								<a class="dropdown-item text-center" href="services.html">Services</a>
-
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
+							<a class="nav-link" href="booking.html" data-lang-en>Booking</a>
+							<a class="nav-link" href="booking.html" data-lang-sk>Rezervácia</a>
 						</li>
 					</ul>
 
@@ -117,78 +113,89 @@
 <!-- Booking -->
 <section class="bookingform py-5" id="bookingform">
 	<div class="container py-md-5 py-3">
-		<h1 class="heading text-capitalize text-center">Booking form</h1>
+		<h1 class="heading text-capitalize text-center" data-lang-en>Booking form</h1>
+		<h1 class="heading text-capitalize text-center" data-lang-sk>Rezervačný formulár</h1>
 		<h5 class="heading mb-5 text-center">RECYCLEX s.r.o.</h5>
 		<div class="row">
 			<div class="col-lg-6 book-appointment p-sm-5 py-5 px-4">
-				<h2>Personal Details</h2>
+				<h2 data-lang-en>Personal Details</h2>
+				<h2 data-lang-sk>Osobné údaje</h2>
 <!---728x90--->
 				<div class="book-agileinfo-form">
 					<form action="booking.html#" method="post">
 						<div class="row main-agile-sectns">
 							<div class="col-md-6 agileits-btm-spc form-text1">
-								<input type="text" name="Name" placeholder="Full Name" required="">
+								<input type="text" name="Name" data-placeholder-en="Full Name" data-placeholder-sk="Celé meno" placeholder="Full Name" required="">
 							</div>
 							<div class="col-md-6 agileits-btm-spc form-text2">
-								<input type="text" name="Phone no" placeholder="Phone number" required="">
+								<input type="text" name="Phone no" data-placeholder-en="Phone number" data-placeholder-sk="Telefónne číslo" placeholder="Phone number" required="">
 							</div>
 						</div>
 						<div class="row ">
 							<div class="col-md-6 agileits-btm-spc form-text1">
-								<input type="email" name="email" placeholder="Email" required="">
+								<input type="email" name="email" data-placeholder-en="Email" data-placeholder-sk="Email" placeholder="Email" required="">
 							</div>
 							<div class="col-md-6">
 								<div class="agileits-btm-spc">
-									<select id="cab" onchange="change_country(this.value)" class="frm-field required sect">
-										<option value="">Select Cab</option>
-										<option value="">Mini</option>
-										<option value="">Sedan</option>
-										<option value="">Elite</option>
+									<select id="cab" onchange="change_country(this.value)" class="frm-field required sect" data-placeholder-en="Select Cab" data-placeholder-sk="Vybrať taxi">
+										<option value="" data-lang-en>Select Cab</option>
+										<option value="" data-lang-sk>Vybrať taxi</option>
+										<option value="mini" data-lang-en>Mini</option>
+										<option value="mini" data-lang-sk>Mini</option>
+										<option value="sedan" data-lang-en>Sedan</option>
+										<option value="sedan" data-lang-sk>Sedan</option>
+										<option value="elite" data-lang-en>Elite</option>
+										<option value="elite" data-lang-sk>Elite</option>
 									</select>
 								</div>
 							</div>
 						</div>
 						<div class="clear"></div>
-						<h2 class="sub-head-w3ls">Booking Details</h2>
+						<h2 class="sub-head-w3ls" data-lang-en>Booking Details</h2>
+						<h2 class="sub-head-w3ls" data-lang-sk>Detaily rezervácie</h2>
 						<div class="row main-agile-sectns">
 							<div class="col-md-6 agileits-btm-spc form-text1">
-								<input id="datepicker" name="Text" type="text" placeholder="Pick-up Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+								<input id="datepicker" name="Text" type="text" data-placeholder-en="Pick-up Date" data-placeholder-sk="Dátum vyzdvihnutia" placeholder="Pick-up Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
 									required="">
 							</div>
 							<div class="col-md-6 agileits-btm-spc form-text2">
-								<input type="text" id="timepicker" name="Time" class="timepicker form-control" placeholder="Pick-up Time" value="">
+								<input type="text" id="timepicker" name="Time" class="timepicker form-control" data-placeholder-en="Pick-up Time" data-placeholder-sk="Čas vyzdvihnutia" placeholder="Pick-up Time" value="">
 							</div>
 						</div>
 						<div class="row main-agile-sectns">
 							<div class="col-md-6 agileits-btm-spc form-text1">
-								<input type="text" name="Pick-up Location" placeholder="Pick-up Location" required="">
+								<input type="text" name="Pick-up Location" data-placeholder-en="Pick-up Location" data-placeholder-sk="Miesto vyzdvihnutia" placeholder="Pick-up Location" required="">
 							</div>
 							<div class="col-md-6 agileits-btm-spc form-text2">
-								<input type="text" name="Drop-off Location" placeholder="Drop-off Location" required="">
+								<input type="text" name="Drop-off Location" data-placeholder-en="Drop-off Location" data-placeholder-sk="Miesto odovzdania" placeholder="Drop-off Location" required="">
 							</div>
 						</div>
 
 						<div class="main-agile-sectns">
 							<div class="agileits-btm-spc">
 								<select id="passengers" onchange="change_country(this.value)" class="frm-field required sect">
-									<option value="">No.of Passengers</option>
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">3</option>         
-									<option value="">4</option>
-									<option value="">5</option>
+									<option value="" data-lang-en>No.of Passengers</option>
+									<option value="" data-lang-sk>Počet cestujúcich</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>         
+									<option value="4">4</option>
+									<option value="5">5</option>
 								</select>
 							</div>
 							<div class="agileits-btm-spc form-text2">
 								<select id="direction" onchange="change_country(this.value)" class="frm-field required">
-									<option value="">Direction</option>
-									<option value="">One Way</option>
-									<option value="">Return</option>       
+									<option value="" data-lang-en>Direction</option>
+									<option value="" data-lang-sk>Smer</option>
+									<option value="oneway" data-lang-en>One Way</option>
+									<option value="oneway" data-lang-sk>Jednosmerná</option>
+									<option value="return" data-lang-en>Return</option>
+									<option value="return" data-lang-sk>Spiatočná</option>
 								</select>
 							</div>
 						</div>
-						<input type="submit" value="Book Now">
-						<input type="reset" value="Reset">
+						<input type="submit" data-value-en="Book Now" data-value-sk="Rezervovať" value="Book Now">
+						<input type="reset" data-value-en="Reset" data-value-sk="Vymazať" value="Reset">
 					</form>
 				</div>
 			</div>
@@ -207,7 +214,8 @@
 	<div class="container-fluid pt-lg-5">
 		<div class="row justify-content-center">
 			<div class="col-lg-6 col-md-8 col-sm-10 text-center" style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-				<h3 class="mb-sm-5 mb-4" style="color: #fff; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Locate Us</h3>	
+				<h3 class="mb-sm-5 mb-4" style="color: #fff; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);" data-lang-en>Locate Us</h3>
+				<h3 class="mb-sm-5 mb-4" style="color: #fff; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);" data-lang-sk>Nájsť nás</h3>
 				<ul class="w3ls-footer-bottom-list" style="list-style: none; padding: 0; color: #fff;">
 					<li class="mb-3" style="color: #fff; font-size: 16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);"> <span class="fas fa-id-card" style="color: #ffd700; margin-right: 10px;"></span> IČO: 55 260 551</li>
 					<li class="mb-3" style="color: #fff; font-size: 16px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);"> <span class="fas fa-certificate" style="color: #ffd700; margin-right: 10px;"></span> DIČ: 2121927478</li>
@@ -219,7 +227,8 @@
 		<!-- copyright -->
 		<div class="footer-cpy text-center pt-sm-5 mt-sm-5 mt-4 pt-3">
 			<div class="w3layouts-agile-copyrightbottom">
-				<p>© 2024 RECYCLEX s.r.o. All Rights Reserved</p>
+					<p data-lang-en>© 2024 RECYCLEX s.r.o. All Rights Reserved</p>
+					<p data-lang-sk>© 2024 RECYCLEX s.r.o. Všetky práva vyhradené</p>
 
 			</div>
 		</div>
@@ -319,6 +328,7 @@
 	<!-- js -->
 	<script data-cfasync="false" src="../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<script type="text/javascript" src="js/language-switcher.js"></script> <!-- Language Switcher -->
 	<!-- //js -->
 	
 	<!-- Time -->

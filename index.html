@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RECYCLEX s.r.o. - Slovakia and EU Taxi Service</title>
+	<title data-lang-en>RECYCLEX s.r.o. - Slovakia and EU Taxi Service</title>
+	<title data-lang-sk>RECYCLEX s.r.o. - Slovensko a EÚ Taxi Služba</title>
 	
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="RECYCLEX s.r.o., Slovakia Taxi, EU Taxi Service, Book Ride, Transportation" />
+	<meta name="keywords" content="RECYCLEX s.r.o., Slovakia Taxi, EU Taxi Service, Book Ride, Transportation" data-lang-en />
+	<meta name="keywords" content="RECYCLEX s.r.o., Slovensko Taxi, EÚ Taxi Služba, Rezervácia Jazdy, Doprava" data-lang-sk />
 	
 	<!-- css files -->
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="css/language-switcher.css" type="text/css" media="all" /> <!-- Language-Switcher-CSS -->
 	<!-- //css files -->
 
 	<!-- web-fonts -->
@@ -26,21 +29,30 @@
 	<div class="top-bar_sub_w3layouts container-fluid">
 		<div class="row">
 			
-			<div class="col-md-4 col-sm-6 log-icons mt-2">
-				<p class="py-2"><i class="fas fa-phone"></i> Call Taxi : +421918094394</p>
+			<div class="col-md-3 col-sm-6 log-icons mt-2">
+				<p class="py-2" data-lang-en><i class="fas fa-phone"></i> Call Taxi : +421918094394</p>
+				<p class="py-2" data-lang-sk><i class="fas fa-phone"></i> Volať Taxi : +421918094394</p>
 			</div>
 			
-			<div class="col-md-4 col-sm-6 logo">
+			<div class="col-md-3 col-sm-6 logo">
 				<a class="navbar-brand" href="index.html">
 					<i class="fas fa-taxi"></i> RECYCLEX s.r.o.</a>
 			</div>
 			
-			
-			<div class="col-md-4 top-forms mt-md-3 mt-2 mb-md-0 mb-3">
+			<div class="col-md-3 top-forms mt-md-3 mt-2 mb-md-0 mb-3">
 				<span class="mx-lg-4 mx-md-2  mx-1">
-					<a href="booking.html">
+					<a href="booking.html" data-lang-en>
 						<i class="fas fa-calendar-alt"></i> Book Now</a>
+					<a href="booking.html" data-lang-sk>
+						<i class="fas fa-calendar-alt"></i> Rezervovať</a>
 				</span>
+			</div>
+			
+			<div class="col-md-3 d-flex justify-content-end align-items-center">
+				<div class="language-switcher">
+					<button class="lang-btn active" data-lang="en">EN</button>
+					<button class="lang-btn" data-lang="sk">SK</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -53,12 +65,14 @@
 			<div class="rslides_container">
 				<div class="banner-img">
 					<div class="bs-slider-overlay">
-						<div class="banner-info text-center">
-							<span class="fas fa-taxi"></span>
-							<h1>Slovakia and EU taxi service</h1>
-							<h2 class="mb-5"><i class="fas fa-phone"></i> +421918094394</h2>
-							<a href="booking.html" class="btn btn-warning btn-lg">Book Now</a>
-						</div>
+					<div class="banner-info text-center">
+						<span class="fas fa-taxi"></span>
+						<h1 data-lang-en>Slovakia and EU taxi service</h1>
+						<h1 data-lang-sk>Slovensko a EÚ taxi služba</h1>
+						<h2 class="mb-5"><i class="fas fa-phone"></i> +421918094394</h2>
+						<a href="booking.html" class="btn btn-warning btn-lg" data-lang-en>Book Now</a>
+						<a href="booking.html" class="btn btn-warning btn-lg" data-lang-sk>Rezervovať teraz</a>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -71,6 +85,7 @@
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<script type="text/javascript" src="js/language-switcher.js"></script> <!-- Language Switcher -->
 	<!-- //js -->
 	
 <!-- //js-scripts -->
