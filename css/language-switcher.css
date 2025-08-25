@@ -145,11 +145,13 @@ html[lang="sk"] [data-lang-sk][data-display="table"] {
 
 /* Book Now button optimization */
 .top-forms span a {
-    padding: 10px 12px !important;
-    font-size: 0.9em !important;
+    padding: 10px 6px !important;
+    font-size: 0.8em !important;
     border-radius: 3px !important;
     min-width: auto !important;
     white-space: nowrap !important;
+    display: inline-block !important;
+    line-height: 1 !important;
 }
 
 /* Additional top bar fixes */
