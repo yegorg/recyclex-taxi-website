@@ -108,21 +108,48 @@ html[lang="sk"] [data-lang-sk][data-display="table"] {
 }
 
 /* Responsive language switcher */
+@media (max-width: 991px) {
+    .language-switcher {
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .language-switcher {
-        margin-top: 10px;
         justify-content: center;
+        margin: 15px 0;
     }
     
     .lang-btn {
         padding: 8px 15px;
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .lang-btn {
         padding: 6px 12px;
-        font-size: 11px;
+        font-size: 12px;
+    }
+    
+    .language-switcher {
+        gap: 8px;
+    }
+}
+
+/* Additional top bar fixes */
+.top-bar_sub_w3layouts .row {
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .top-bar_sub_w3layouts .col-12 {
+        margin-bottom: 10px;
+    }
+    
+    .top-bar_sub_w3layouts .col-12:last-child {
+        margin-bottom: 0;
     }
 }
