@@ -9,7 +9,7 @@ class BookingFormHandler {
     init() {
         // Initialize EmailJS with your public key
         // You'll need to replace 'YOUR_PUBLIC_KEY' with actual EmailJS public key
-        emailjs.init('YOUR_PUBLIC_KEY');
+        emailjs.init('06IFKOj-6EjGVO-A1');
         
         document.addEventListener('DOMContentLoaded', () => {
             const bookingForm = document.querySelector('.book-agileinfo-form form');
@@ -139,8 +139,8 @@ Please contact the customer to confirm this booking.`
         // Send email using EmailJS
         // You'll need to replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual values
         const response = await emailjs.send(
-            'YOUR_SERVICE_ID',
-            'YOUR_TEMPLATE_ID',
+            'service_3aptdmq',
+            'template_xsbc9bc',
             templateParams
         );
 
