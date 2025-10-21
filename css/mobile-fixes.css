@@ -482,6 +482,24 @@ button, .btn, .lang-btn, .top-forms span a {
     }
 }
 
+/* Remove price.jpg backgrounds on mobile */
+@media (max-width: 768px) {
+    .services-bottom {
+        background-image: none !important;
+        background: #333 !important;
+    }
+    
+    .prices {
+        background-image: none !important;
+        background: #333 !important;
+    }
+    
+    .banner {
+        background-image: none !important;
+        background: #333 !important;
+    }
+}
+
 /* Mobile-specific background positioning */
 @media (max-width: 768px) {
     .banner-img,
