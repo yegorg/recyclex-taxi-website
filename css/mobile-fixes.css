@@ -467,10 +467,13 @@ button, .btn, .lang-btn, .top-forms span a {
     initial-scale: 1;
 }
 
-/* Add background image for mobile banner */
+/* Add background image for mobile banner - override all banner variants */
 @media (max-width: 768px) {
-    .banner-img {
-        background-image: url('../images/banner.jpg');
+    .banner-img,
+    .banner-img.one,
+    .banner-img.two,
+    .banner-img.three {
+        background-image: url('../images/banner.jpg') !important;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -481,14 +484,20 @@ button, .btn, .lang-btn, .top-forms span a {
 
 /* Mobile-specific background positioning */
 @media (max-width: 768px) {
-    .banner-img {
-        background-position: center 30%;
+    .banner-img,
+    .banner-img.one,
+    .banner-img.two,
+    .banner-img.three {
+        background-position: center 30% !important;
         min-height: 70vh;
     }
 }
 
 @media (max-width: 480px) {
-    .banner-img {
+    .banner-img,
+    .banner-img.one,
+    .banner-img.two,
+    .banner-img.three {
         min-height: 60vh;
     }
 }
