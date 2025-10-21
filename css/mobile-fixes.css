@@ -474,10 +474,13 @@ button, .btn, .lang-btn, .top-forms span a {
     .banner-img.two,
     .banner-img.three {
         background-image: url('../images/banner.jpg') !important;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 100vh;
+        background-position: center center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        min-height: 100vh !important;
+        height: 100vh !important;
+        width: 100vw !important;
         position: relative;
     }
 }
@@ -506,8 +509,9 @@ button, .btn, .lang-btn, .top-forms span a {
     .banner-img.one,
     .banner-img.two,
     .banner-img.three {
-        background-position: center 30% !important;
-        min-height: 70vh;
+        background-position: center center !important;
+        min-height: 100vh !important;
+        height: 100vh !important;
     }
 }
 
@@ -516,6 +520,7 @@ button, .btn, .lang-btn, .top-forms span a {
     .banner-img.one,
     .banner-img.two,
     .banner-img.three {
-        min-height: 60vh;
+        min-height: 100vh !important;
+        height: 100vh !important;
     }
 }
